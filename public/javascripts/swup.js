@@ -1,5 +1,8 @@
 // To make page transitions work, only need this one line of js
-const swup = new Swup();
+// const SwupHeadPlugin = require('@swup/head-plugin');
+const swup = new Swup({
+    plugins: [new SwupHeadPlugin()]
+});
 
 function init() {
     if (document.querySelector('title').innerText === 'Nicky Bothma') {
