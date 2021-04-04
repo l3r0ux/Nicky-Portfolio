@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="/css/main.css"> -->
+    <link rel="stylesheet" href="/css/swup-animations.css">
+    <title>Nicky Bothma</title>
+</head>
+
+<!-- The container with id of swup will be the one that is transitioned -->
+<!-- The class defines the animation, has to start with "tranision-" then whatever we want after -->
+<body>
+    <main id="swup" class="transition-fade">
+        <section id="hero">
+            <div id="bubbles-guiding-line"></div>
+            <div id="name" class="hero-containers">
+                <h1>Nicky Bothma</h1>
+            </div>
+            <div id="image" class="hero-containers">
+
+            </div>
+        </section>
+
+
+        <!-- Bubbles are nested here in order to get stacking context correct -->
+        <section id="skills">
+            <div id="digital-arts-short" class="skill-section">
+                <div class="nav-bubbles digital-arts-bubble">
+                    <span>Art</span>
+                </div>
+                <a href="/digital-arts">Digital Arts</a>
+                <!-- <a href="../views/digital-arts.ejs">Digital Arts</a> -->
+            </div>
+
+            <div id="models-short" class="skill-section">
+                <div class="nav-bubbles models-bubble">
+                    <span>Anim</span>
+                </div>
+            </div>
+
+            <div id="animations-short" class="skill-section">
+                <div class="nav-bubbles animations-bubble">
+                    <span>3D</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="meet-the-artist" class="about"></section>
+    </main>
+
+    <!-- <script src="/javascripts/index.js"></script> -->
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script src="/javascripts/swup.js"></script>
+</body>
+
+</html>
