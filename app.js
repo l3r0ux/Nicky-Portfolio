@@ -20,6 +20,7 @@ app.get('/digital-arts', (req, res) => {
     res.render('digital-arts');
 })
 
-app.listen(process.env.PORT, '0.0.0.0', () => {
-    console.log(`Listening on port`);
+let port = process.env.PORT || 3000;
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Listening on ${port}`);
 })
