@@ -13,21 +13,21 @@ function init() {
         document.body.append(homeJs);
 
         // Append css for reload
-        const homeStyles = document.createElement('link');
-        homeStyles.rel = 'stylesheet';
-        homeStyles.href = '/css/main.css';
-        homeStyles.id = 'home-css'
-        document.head.append(homeStyles);
+        // const homeStyles = document.createElement('link');
+        // homeStyles.rel = 'stylesheet';
+        // homeStyles.href = '/css/main.css';
+        // homeStyles.id = 'home-css'
+        // document.head.append(homeStyles);
     }
     else if (document.querySelector('title').innerText === 'Digital Arts') {
         console.log(document.querySelector('title').innerText === 'Nicky Bothma')
         console.log(document.querySelector('title').innerText === 'Digital Arts')
 
-        const artsCss = document.createElement('link');
-        artsCss.rel = 'stylesheet';
-        artsCss.href = '/css/digital-arts.css';
-        artsCss.id = 'arts-css';
-        document.body.append(artsCss);
+        // const artsCss = document.createElement('link');
+        // artsCss.rel = 'stylesheet';
+        // artsCss.href = '/css/digital-arts.css';
+        // artsCss.id = 'arts-css';
+        // document.body.append(artsCss);
     }
 }
 
@@ -37,10 +37,10 @@ function unload() {
     if (document.querySelector('title').innerText === 'Nicky Bothma') {
         console.log(document.querySelector('title').innerText === 'Nicky Bothma')
         document.getElementById('home-js').remove();
-        document.getElementById('home-css').remove();
+        // document.getElementById('home-css').remove();
     }
     else if (document.querySelector('title').innerText === 'Digital Arts') {
-        document.getElementById('arts-css').remove();
+        // document.getElementById('arts-css').remove();
     }
 }
 swup.on('willReplaceContent', unload);
