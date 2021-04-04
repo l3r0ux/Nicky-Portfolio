@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-// const SwupHeadPlugin = require('./node_modules/@swup/head-plugin/dist/SwupHeadPlugin');
 
 const app = express();
 

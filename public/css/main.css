@@ -1,3 +1,7 @@
+#hero {
+    animation: transitionIn 500ms;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +30,6 @@ main {
     height: 100vh;
     width: 100%;
     max-width: 120rem;
-    /* background-color: blue; */
     display: flex;
 }
 
@@ -38,13 +41,19 @@ main {
 }
 
 #bubbles-guiding-line {
+    opacity: 0;
     margin: 0 auto;
-    height: 1px;
-    width: 100%;
+    height: 0;
+    width: 0;
     max-width: 120rem;
     position: fixed;
     top: 87%;
+    left: 50%;
+    transform: translate(-50%, 0);
     border-top: 2px solid black;
+    animation-name: fadeIn;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
 }
 
 #skills {
@@ -100,8 +109,9 @@ main {
 }
 
 .nav-bubbles {
-    width: 10rem;
-    height: 10rem;
+    opacity: 0;
+    width: 0;
+    height: 0;
     border: 2px solid black;
     border-radius: 50%;
     display: inline-block;
@@ -119,18 +129,30 @@ main {
     top: 87%;
     background-color: #6ce6c7;
     transform: translate(-50%, -50%);
+    /* transition: all 200ms ease; */
+    animation-name: transitionInOther;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
 }
 .models-bubble {
     left: 50%;
     top: 87%;
     background-color: #6ce6bb;
     transform: translate(-50%, -50%);
+    animation-name: transitionInOther;
+    animation-duration: 500ms;
+    animation-delay: 100ms;
+    animation-fill-mode: forwards;
 }
 .animations-bubble {
     left: 70%;
     top: 87%;
     background-color: #67f5a9;
     transform: translate(-50%, -50%);
+    animation-name: transitionInOther;
+    animation-duration: 500ms;
+    animation-delay: 200ms;
+    animation-fill-mode: forwards;
 }
 
 /* To unfix art bubble */
@@ -162,4 +184,43 @@ main {
     background-color: blueviolet;
     box-shadow: 0 -3px 10px 0 black;
     z-index: 1;
+}
+
+@keyframes transitionInOther {
+    from {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    to {
+        opacity: 1;
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        height: 1px;
+        width: 100%;
+        max-width: 120rem;
+    }
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
