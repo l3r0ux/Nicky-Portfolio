@@ -49,5 +49,3 @@ function unload() {
 swup.on('willReplaceContent', unload);
 
 swup.on('contentReplaced', init);
-
-{/* <link rel="stylesheet" href="/css/main.css"></link> */ }
