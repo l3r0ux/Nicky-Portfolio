@@ -59,7 +59,7 @@ main {
 
 #animations {
     opacity: 1;
-    transition: opacity 200ms ease;
+    transition: opacity 400ms ease;
     display: flex;
     align-items: center;
     justify-content: center;
