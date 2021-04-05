@@ -20,7 +20,7 @@ for (let link of links) {
     link.addEventListener('click', (e) => {
         console.log(e.target.id);
         // Fade out body then navigate to respective page
-        document.body.classList.add('fade-body');
+        document.querySelector('main').classList.add('fade-body');
         setTimeout(function() {
             // passing through clicked coordinates
             window.location.href = `${e.target.id}?clickedX=${clickedXCoord}&clickedY=${clickedYCoord}`;

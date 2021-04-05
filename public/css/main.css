@@ -27,6 +27,10 @@ nav a {
 
 body {
     background-color: #7fe5fa;
+}
+
+main {
+    
     opacity: 1;
     /* Make sure this time matches with time in timeout function in js */
     /* or make it a bit longer for slower servers */
@@ -34,12 +38,10 @@ body {
     /* animation-name: fadeInBody;
     animation-duration: 400ms;
     animation-timing-function: ease; */
-}
-
-main {
     background-color: #92fdff;
     background-image: url('/images/cutsey.png');
     background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 #name h1 {

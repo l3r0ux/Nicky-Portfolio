@@ -18,7 +18,7 @@ for (let link of links) {
     link.addEventListener('click', (e) => {
         console.log(e.target)
         if (!(e.target.id === '/')) {
-            document.body.classList.add('fade-content')
+            document.querySelector('main').classList.add('fade-content')
         } else if (e.target.id === '/') {
             let displayWidnow = document.querySelector('.display-window');
             displayWidnow.classList.add('fade-content');
