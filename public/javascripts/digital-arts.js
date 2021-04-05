@@ -13,7 +13,10 @@ const links = document.querySelectorAll('a');
 for (let link of links) {
     console.log(link)
     link.addEventListener('click', () => {
-        // passing through clicked coordinates
-        window.location.href = `/?clickedX=${incomingX}&clickedY=${incomingY}`;
+        document.body.classList.add('fade-body')
+        setTimeout(function () {
+            // passing through clicked coordinates
+            window.location.href = `/?clickedX=${incomingX}&clickedY=${incomingY}`;
+        }, 200)
     });
 }
