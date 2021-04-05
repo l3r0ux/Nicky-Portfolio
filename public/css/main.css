@@ -18,6 +18,7 @@ body {
 }
 
 main {
+    background-color: #92fdff;
     background-image: url('/images/cutsey.png');
     background-repeat: repeat;
 }
