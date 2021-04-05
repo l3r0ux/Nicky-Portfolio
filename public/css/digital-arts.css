@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --incomingX: ;
+    --incomingY: ;
+}
+
 body {
     background-color: #7fe5fa;
 }
@@ -56,10 +61,10 @@ main {
 
 @keyframes on-load {
     from {
-        clip-path: circle(0 at 0 0);
+        clip-path: circle(0 at var(--incomingX) var(--incomingY));
     }
 
     to {
-        clip-path: circle(150% at 0 0);
+        clip-path: circle(150% at var(--incomingX) var(--incomingY));
     }
 }

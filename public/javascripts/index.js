@@ -13,9 +13,6 @@ const modelsSection = document.getElementById('models-short')
 const animationsBubble = document.querySelector('.animations-bubble');
 const animationsSection = document.getElementById('animations-short');
 
-// FETCH REQUESTS TO GET DIFFERENT PAGES
-// LET NEW PAGE GO OVER OLD PAGE, THEN DELETE OLD PAGE(THE ONE BELLOW)
-
 // All anchor tags on home page to do a timout together with css animation
 const links = document.querySelectorAll('a');
 for (let link of links) {
@@ -24,8 +21,9 @@ for (let link of links) {
         // Fade out body then navigate to respective page
         document.body.classList.add('fade-body');
         setTimeout(function() {
-            window.location.href = '/digital-arts';
-        }, 500);
+            // passing through clicked coordinates
+            window.location.href = `/digital-arts?clickedX=${clickedXCoord}&clickedY=${clickedYCoord}`;
+        }, 200);
     });
 }
 
