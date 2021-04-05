@@ -3,7 +3,7 @@
 let clickedXCoord;
 let clickedYCoord;
 
-function printMousePos(event) {
+function setMousePos(event) {
     clickedXCoord = event.clientX;
     clickedYCoord = event.clientY;
 
@@ -15,5 +15,5 @@ function printMousePos(event) {
     coords.style.setProperty('--clickedX', clickedXCoord);
     coords.style.setProperty('--clickedY', clickedYCoord);
 }
-document.addEventListener("click", printMousePos);
+document.addEventListener("click", setMousePos);
 

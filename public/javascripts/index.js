@@ -17,12 +17,13 @@ const animationsSection = document.getElementById('animations-short');
 const links = document.querySelectorAll('a');
 for (let link of links) {
     console.log(link)
-    link.addEventListener('click', () => {
+    link.addEventListener('click', (e) => {
+        console.log(e.target.id);
         // Fade out body then navigate to respective page
         document.body.classList.add('fade-body');
         setTimeout(function() {
             // passing through clicked coordinates
-            window.location.href = `/digital-arts?clickedX=${clickedXCoord}&clickedY=${clickedYCoord}`;
+            window.location.href = `${e.target.id}?clickedX=${clickedXCoord}&clickedY=${clickedYCoord}`;
         }, 100);
     });
 }

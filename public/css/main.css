@@ -5,21 +5,15 @@
     scroll-behavior: smooth;
 }
 
-:root {
-    --digital-arts-short__top: ;
-    --models-short__top: ;
-    --animations-short__top: ;
-}
-
 body {
     background-color: #7fe5fa;
     opacity: 1;
     /* Make sure this time matches with time in timeout function in js */
     /* or make it a bit longer for slower servers */
     transition: opacity 400ms ease;
-    animation-name: fadeInBody;
+    /* animation-name: fadeInBody;
     animation-duration: 400ms;
-    animation-timing-function: ease;
+    animation-timing-function: ease; */
 }
 
 main {
@@ -101,6 +95,7 @@ main {
 #digital-arts-short a:hover {
     color: #6ce6c7;
 }
+
 #models-short {
     z-index: 20;
     display: flex;
@@ -108,12 +103,22 @@ main {
     justify-content: center;
     flex-direction: column;
 }
+
 #animations-short {
     z-index: 10;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
+}
+#animations-short a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    transition: color 200ms ease;
+}
+#animations-short a:hover {
+    color: #6ce6c7;
 }
 
 .nav-bubbles {
@@ -213,7 +218,7 @@ main {
     }
 }
 
-@keyframes fadeInBody {
+/* @keyframes fadeInBody {
     from {
         opacity: 0;
     }
@@ -221,7 +226,7 @@ main {
     to {
         opacity: 1;
     }
-}
+} */
 
 @keyframes fadeInLine {
     from {
