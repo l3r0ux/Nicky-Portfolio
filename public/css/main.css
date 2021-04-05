@@ -94,13 +94,13 @@ main {
 }
 
 .skill-section {
-    opacity: 0.9;
     height: 40vh;
     width: 70%;
     max-width: 120rem;
     margin: 5rem 0 5rem 0;
     padding-top: 5rem;
-    box-shadow: 10px 10px 1px 0 rgba(33, 105, 240, 0.5);
+    /* box-shadow: 10px 10px 1px 0 rgba(33, 105, 240, 0.5); */
+    box-shadow: 10px 10px 1px black;
     transition: margin 200ms ease;
     background-color: blueviolet;
     border-radius: 5rem;
@@ -163,7 +163,8 @@ main {
     justify-content: center;
     font-size: 2rem;
     cursor: pointer;
-    box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.5); */
+    box-shadow: 10px 10px 1px black;
 }
 
 .digital-arts-bubble {
