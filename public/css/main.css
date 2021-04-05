@@ -5,6 +5,10 @@
     scroll-behavior: smooth;
 }
 
+.highlighted {
+    color: blueviolet;
+}
+
 nav {
     z-index: 10;
     display: flex;

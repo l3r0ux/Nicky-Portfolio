@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.highlighted {
+    color: blueviolet;
+}
+
 nav {
     display: flex;
     align-items: center;
