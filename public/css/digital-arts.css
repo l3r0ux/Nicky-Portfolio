@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-main {
+body {
     background-color: #7fe5fa;
 }
 
@@ -12,21 +12,46 @@ main {
     filter: drop-shadow(2px 2px 20px black);
 }
 
-#section {
-    height: 100vh;
-    width: 100%;
-    background-image: url('/images/cutsey.png');
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+main {
     background-color: #92fdff;
-    /* clip-path: circle(0); */
+    background-image: url('/images/cutsey.png');
+    background-repeat: repeat;
     animation-name: on-load;
     animation-duration: 2000ms;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
+}
+
+#section {
+    height: 100vh;
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#digital-arts {
+    width: 80rem;
+    max-width: 120rem;
+    height: 40rem;
+    border-radius: 5rem;
+    box-shadow: 2px 2px 10px 0 black;
+    max-width: 120rem;
+    background-color: blueviolet;
+}
+
+#home {
+    padding-top: 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    transition: color 200ms ease;
+}
+#home:hover {
+    color: blueviolet;
 }
 
 @keyframes on-load {

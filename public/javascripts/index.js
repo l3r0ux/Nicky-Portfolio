@@ -18,7 +18,6 @@ const animationsSection = document.getElementById('animations-short');
 
 // All anchor tags on home page to do a timout together with css animation
 const links = document.querySelectorAll('a');
-
 for (let link of links) {
     console.log(link)
     link.addEventListener('click', () => {
