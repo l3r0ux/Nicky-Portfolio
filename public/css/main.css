@@ -1,7 +1,3 @@
-#hero {
-    animation: transitionIn 500ms;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +11,13 @@
     --animations-short__top: ;
 }
 
-main {
+body {
     background-color: #92fdff;
+    opacity: 1;
+    transition: opacity 500ms ease;
+}
+
+main {
     background-image: url('/images/cutsey.png');
     background-repeat: repeat;
 }
@@ -31,6 +32,7 @@ main {
     width: 100%;
     max-width: 120rem;
     display: flex;
+    animation: transitionIn 500ms;
 }
 
 .hero-containers {
@@ -184,6 +186,11 @@ main {
     background-color: blueviolet;
     box-shadow: 0 -3px 10px 0 black;
     z-index: 1;
+}
+
+/* Class to fade out everything */
+.fade-body {
+    opacity: 0;
 }
 
 @keyframes transitionInOther {
