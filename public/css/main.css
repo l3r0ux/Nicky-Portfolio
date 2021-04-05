@@ -46,6 +46,7 @@ main {
     background-image: url('/images/cutsey.png');
     background-repeat: repeat;
     background-attachment: fixed;
+    background-size: 300px 300px;
 }
 
 #name h1 {
