@@ -15,9 +15,10 @@ body {
     background-color: #7fe5fa;
     opacity: 1;
     /* Make sure this time matches with time in timeout function in js */
-    transition: opacity 200ms ease;
+    /* or make it a bit longer for slower servers */
+    transition: opacity 100ms ease;
     animation-name: fadeInBody;
-    animation-duration: 200ms;
+    animation-duration: 100ms;
     animation-timing-function: ease;
 }
 

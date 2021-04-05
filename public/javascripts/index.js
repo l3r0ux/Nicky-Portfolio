@@ -23,7 +23,7 @@ for (let link of links) {
         setTimeout(function() {
             // passing through clicked coordinates
             window.location.href = `/digital-arts?clickedX=${clickedXCoord}&clickedY=${clickedYCoord}`;
-        }, 200);
+        }, 100);
     });
 }
 

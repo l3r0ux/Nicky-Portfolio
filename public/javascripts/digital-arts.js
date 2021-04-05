@@ -17,6 +17,6 @@ for (let link of links) {
         setTimeout(function () {
             // passing through clicked coordinates
             window.location.href = `/?clickedX=${incomingX}&clickedY=${incomingY}`;
-        }, 200)
+        }, 100)
     });
 }
