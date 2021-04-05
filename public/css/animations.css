@@ -41,7 +41,7 @@ main {
     background-image: url('/images/cutsey.png');
     background-repeat: repeat;
     animation-name: on-load;
-    animation-duration: 2000ms;
+    animation-duration: 1200ms;
     animation-fill-mode: forwards;
     animation-timing-function: ease;
 }
