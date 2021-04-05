@@ -236,16 +236,6 @@ main {
     }
 }
 
-/* @keyframes fadeInBody {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-} */
-
 @keyframes fadeInLine {
     from {
         opacity: 0.5;

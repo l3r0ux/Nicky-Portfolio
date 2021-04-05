@@ -28,8 +28,8 @@ body {
 }
 
 /* Class to fade out everything */
-.fade-body {
-    opacity: 0;
+.fade-content {
+    opacity: 0 !important;
 }
 
 #section-wrap {
@@ -58,6 +58,8 @@ main {
 }
 
 #animations {
+    opacity: 1;
+    transition: opacity 200ms ease;
     display: flex;
     align-items: center;
     justify-content: center;
