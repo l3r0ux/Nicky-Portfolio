@@ -49,7 +49,7 @@ main {
     background-image: url('/images/cutsey.png');
     background-repeat: repeat;
     background-attachment: fixed;
-    background-size: 300px 300px;
+    background-size: 100px 100px;
     animation-name: on-load;
     animation-duration: 1200ms;
     animation-fill-mode: forwards;
