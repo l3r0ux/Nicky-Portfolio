@@ -16,9 +16,9 @@ body {
     opacity: 1;
     /* Make sure this time matches with time in timeout function in js */
     /* or make it a bit longer for slower servers */
-    transition: opacity 200ms ease;
+    transition: opacity 400ms ease;
     animation-name: fadeInBody;
-    animation-duration: 200ms;
+    animation-duration: 400ms;
     animation-timing-function: ease;
 }
 

@@ -12,7 +12,7 @@
 body {
     background-color: #7fe5fa;
     opacity: 1;
-    transition: opacity 200ms ease;
+    transition: opacity 400ms ease;
 }
 
 /* Class to fade out everything */
