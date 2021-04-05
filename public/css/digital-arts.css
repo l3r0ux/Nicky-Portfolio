@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 2rem;
+    max-width: 120rem;
+}
+
+nav a {
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    cursor: pointer;
+}
+
 body {
     background-color: #7fe5fa;
     opacity: 1;
@@ -41,6 +58,9 @@ main {
 }
 
 #digital-arts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 70rem;
     max-width: 120rem;
     height: 40rem;
