@@ -98,7 +98,7 @@ main {
     width: 70%;
     max-width: 120rem;
     margin: 5rem 0 5rem 0;
-    padding-top: 5rem;
+    padding-top: 6rem;
     /* box-shadow: 10px 10px 1px 0 rgba(33, 105, 240, 0.5); */
     box-shadow: 10px 10px 1px black;
     transition: margin 200ms ease;
@@ -122,14 +122,25 @@ main {
 }
 #digital-arts-short a:hover {
     color: #6ce6c7;
+    cursor: pointer;
 }
 
 #models-short {
     z-index: 20;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
+}
+#models-short a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    transition: color 200ms ease;
+}
+#models-short a:hover {
+    color: #6ce6c7;
+    cursor: pointer;
 }
 
 #animations-short {
@@ -147,6 +158,7 @@ main {
 }
 #animations-short a:hover {
     color: #6ce6c7;
+    cursor: pointer;
 }
 
 .nav-bubbles {

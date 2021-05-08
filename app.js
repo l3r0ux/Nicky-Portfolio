@@ -23,6 +23,10 @@ app.get('/digital-arts', (req, res) => {
     res.render('digital-arts');
 })
 
+app.get('/3d-models', (req, res) => {
+    res.render('3d-models');
+})
+
 app.get('/animations', (req, res) => {
     res.render('animations');
 })
