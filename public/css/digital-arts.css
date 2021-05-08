@@ -94,7 +94,7 @@ main {
 
 .artwork {
     position: relative;
-    border: 15px groove  gold;
+    border: 15px groove  rgb(53, 53, 53);
     /* top: 50%; */
     /* transform: translate(0, -50%); */
     display: inline-block;
