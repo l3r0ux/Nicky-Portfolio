@@ -57,7 +57,7 @@ main {
 }
 
 #section {
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     max-width: 120rem;
     margin: 0 auto;
@@ -80,8 +80,10 @@ main {
 }
 
 model-viewer {
-    width: 100vw;
-    height: 100vh;
+    border-radius: 5rem;
+    width: 90vw;
+    height: 90vh;
+    background-color: grey;
 }
 
 #home {
