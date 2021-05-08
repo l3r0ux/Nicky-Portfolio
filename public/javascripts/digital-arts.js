@@ -30,12 +30,12 @@ scrollingButtons.forEach((button) => {
     button.addEventListener('mousedown', (e) => {
         if (e.target.id === 'scroll-right') {
             timerId = setInterval(() => {
-                digitalArtsContainer.scrollBy(scroll + 1, 0)
+                digitalArtsContainer.scrollBy(scroll + 3, 0)
             }, 1)
         }
         else if (e.target.id === 'scroll-left') {
             timerId = setInterval(() => {
-                digitalArtsContainer.scrollBy(scroll - 1, 0)
+                digitalArtsContainer.scrollBy(scroll - 3, 0)
             }, 1)
         }
     })
