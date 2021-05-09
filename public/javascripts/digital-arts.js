@@ -6,7 +6,7 @@ const artworks = document.querySelectorAll('.artwork')
 const containerDimensions = digitalArtsContainer.getBoundingClientRect();
 
 // dont show side scroll window with animated characters and frames on mobile
-if (window.innerWidth >= 1366) {
+if (window.innerWidth > 1366) {
     let timerId;
     let scroll = 0;
 
